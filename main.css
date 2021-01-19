@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    text-align: center;
+    margin: 1.5rem 0;
+    font: bold 3rem 'Montserrat', sans-serif;
+}
+
+.chat-rooms {
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.chat-list{
+    list-style-type: none;
+    margin: 1rem 8rem 1rem 0;
+}
+
+.list-group-item{
+    border: 0.15rem solid #E9EBF0;
+    border-radius:10px;
+    padding: 2rem 1rem;
+    font: 1rem "Montserrat", sans-serif;
+    margin: 1rem 0;
+}
+
+
+
+.input-group{
+    display: flex;
+    justify-content: center;
+    }
+
+.input{
+    width: 40%;
+}
+
+.chat {
+    margin: 8px 0;
+    font: italic 1rem 'Montserrat', sans-serif;
+}
+
+.btn {
+    background: #57dfc6;
+    color: white;
+    border:none !important;
+    padding: 0.8rem 1.5rem;
+    cursor: pointer;
+    font: 1.5rem "Montserrat", sans-serif;
+    width:15%;
+    border-radius: 10px;
+}
+
+.btn:focus {
+    outline: none !important;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: #7F7E7D;
+}
+
+.input-btn{
+    width:9%;
+    padding-left: 0.7rem;
+    border-top-right-radius: 10px ;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.input-group-text{
+    text-align: center;
+    font: 1rem "Montserrat", sans-serif;
+    padding: 1rem 1rem;
+    background-color: #E9EBF0;
+    color: #7F7E7D;
+    width:10%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.username {
+    font-weight: bold;
+}
+
+.time {
+    font-size: 0.8rem;
+    color: #999;
+    padding-top: 1rem;
+}
+
+.update-msg{
+    text-align: center;
+    margin: 1rem auto;
+}
+
+
+@media (max-width: 40rem){
+    .container{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 80rem){
+    .container{
+        max-width: 720px;
+    }
+}

@@ -1,0 +1,65 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <title>Live Chat</title>
+</head>
+<body>
+
+    <div class = "container">
+        <h1 class = "title">Live Chat</h1>
+
+        <div class="chat-rooms">
+            <div class = "chat">Choose a chatroom:</div>
+            <button class= "btn" id= "general">#general</button>
+            <button class= "btn" id="gaming">#gaming</button>
+            <button class= "btn" id="music">#music</button>
+            <button class= "btn" id="ninjas">#ninjas</button>
+        </div>
+
+        <div class= "chat-window">
+            <ul class= "chat-list"></ul>
+        </div>
+            <form class = "form">
+                <div class= "input-group">
+                        <div class="input-group-text">Your message:</div>
+                    <input type="text" id="message" class= "input" required>
+        
+                        <input type="submit" class= "btn input-btn" value="send">
+                </div>
+            </form>
+        
+            <form class= "updatemsg">
+                <div class= "input-group">
+                        <div class="input-group-text"> Update name:</div>
+                    <input type="text" id="name" class= "input" required> 
+                        <input type="submit" class= "btn input-btn" value = "update">
+                </div>
+                <div class ="update-msg"></div>
+            </form>
+        
+    </div>
+    <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.1/firebase-firestore.js"></script>
+
+<script>
+
+    var firebaseConfig = {
+      apiKey: "AIzaSyCVC1981N0Zoqaq0k0qDh8AxsA1QfiQa6M",
+      authDomain: "javascript-cbb73.firebaseapp.com",
+      projectId: "javascript-cbb73",
+      storageBucket: "javascript-cbb73.appspot.com",
+      messagingSenderId: "746364085870",
+      appId: "1:746364085870:web:61e19994814f1ce56d287f",
+      measurementId: "G-4MS6V7SDGZ"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore()
+  </script>
+    <script src = "script/sandbox.js"></script>
+    <script src = "script/ui.js"></script>
+    <script src = "script/app.js"></script>
+</body>
+</html>
