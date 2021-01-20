@@ -9,7 +9,7 @@ class ChatUI {
     clear(){
       this.list.innerHTML =``;
     }
-
+    render(data){
       const html = `
         <li class="list-group-item">
           <span class="username">${data.username}</span>
